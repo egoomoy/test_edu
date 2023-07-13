@@ -22,7 +22,7 @@ public interface GlobalConstant {
     final String AUTHORIZATION_URI = "/api/v1/authorizations/check";
     final String REFRESH_TOKEN_URI = "/api/v1/users/token/refresh";
     final String MESSAGES_URI = "/api/v1/messages/**";
-    final String LOGIN_URI = "/login";
+    final String LOGIN_URI = "/my/login";
     final String[] SECURITY_PERMITALL_ANTPATTERNS = {AUTHORIZATION_URI, REFRESH_TOKEN_URI, MESSAGES_URI, LOGIN_URI, "/actuator/**", "/v3/api-docs/**", "/api/v1/images/**", "/swagger-ui.html"};
     final String USER_SERVICE_URI = "/user-service";
     //예약 신청 후 재고 변경 성공여부 exchange name

@@ -60,7 +60,8 @@ public class SecurityConfig {
 	     * @throws Exception
 	     */
 		AuthenticationFilter authenticationFilter = new AuthenticationFilter(authenticationManager, tokenProvider, userService);
-		
+		authenticationFilter.setFilterProcessesUrl("/my/login");
+
 		http
         .csrf().disable().headers().frameOptions().disable()
         .and()
